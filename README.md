@@ -1,6 +1,6 @@
 # MuSync
 
-MuSync is a basic Rust-based CLI application designed to synchronize your local music library with a Subsonic API server (Navidrome in my case). It efficiently processes your music collection, compares it with a remote API, and uploads missing albums.
+MuSync is a basic Rust-based CLI tool to synchronize your local music library with a Subsonic API server (Navidrome in my case). It processes your music collection, compares it with a remote API, and uploads missing albums.
 
 This project has a limited scope, tailored to my specific needs. I have a Navidrome server which is compatible with Subsonic API v1.16.1, and it reflects my local music library. While I've used more robust solutions in the past, they often required high maintenance or had issues that needed fixing. I simply wanted a tool where I could run a command to compare the albums on the server and upload any missing ones. Navidrome requires the files to be stored locally on the server, but I also want to keep the files on my laptop for local access.
 

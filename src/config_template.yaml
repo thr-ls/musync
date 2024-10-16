@@ -1,0 +1,11 @@
+local_path: "/path/to/your/music/library"
+db_path: "/path/to/local/database"
+remote_settings:
+  remote_user: "remote_username"
+  remote_host: "remote.host.com"
+  remote_path: "/path/on/remote/server"
+  ssh_key_path: "/path/to/your/ssh/key"
+api_settings:
+  api_base_url: "https://your-api-server.com"
+  api_username: "your_username"
+  api_password: "your_password"

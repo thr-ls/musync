@@ -1,0 +1,43 @@
+[package]
+name = "musync"
+version = "0.1.0"
+edition = "2021"
+authors = ["Thiago Rodrigues <thiago@thrls.net>"]
+license = "MIT"
+description = "Music synchronization with subsonic API"
+readme = "README.md"
+homepage = "https://github.com/thr-ls/musync"
+repository = "https://github.com/thr-ls/musync"
+keywords = ["cli", "subsonic", "navidrome"]
+categories = ["command-line-utilities"]
+
+[lib]
+name = "musync"
+path = "src/lib.rs"
+
+[[bin]]
+name = "musync"
+path = "src/main.rs"
+
+[dependencies]
+walkdir = "2.3"
+rayon = "1.5"
+sled = { version = "0.34", features = ["compression"] }
+serde = { version = "1.0", features = ["derive"] }
+reqwest = { version = "0.11", features = ["json"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+indicatif = "0.17"
+regex = "1.5"
+unicode-normalization = "0.1.19"
+bincode = "1.3"
+config = "0.14.0"
+async-trait = "0.1.83"
+unicode-segmentation = "1.10.0"
+clap = "4.5.20"
+anyhow = "1.0"
+openssl = { version = "0.10.64", features = ["vendored"] }
+
+[dev-dependencies]
+mockall = "0.13.0"
+tempfile = "3.3.0"

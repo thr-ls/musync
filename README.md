@@ -24,6 +24,13 @@ You can install MuSync using one of the following methods:
 2. Download the latest release binary for your operating system.
 3. Extract the archive and move the `musync` binary to a directory in your system PATH (e.g., `/usr/local/bin` on Unix-like systems).
 
+On macOS, you may receive the error message: "Can't be opened because the identity of the developer cannot be confirmed."
+
+  ```
+   1. Open System Preferences
+   2. Go to Security & Privacy
+   3. Click on "Allow anyway"
+  ```
 ### Option 2: Build from source
 
 1. Ensure you have Rust installed (rustc 1.81.0 or later).
